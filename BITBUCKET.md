@@ -1,4 +1,9 @@
-# Bitbucket Pipelines
+<div align="center">
+  <h1>Bitbucket Pipelines</h1>
+  <img width="250px" src="https://wac-cdn.atlassian.com/dam/jcr:e75ffb0e-b3ee-40ca-8659-ecb93675a379/Bitbucket@2x-blue.png" />
+</div>
+
+---
 
 1. Create file config:
 
