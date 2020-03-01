@@ -1,4 +1,10 @@
-# Travis
+<div align="center">
+  <h1 style="margin:0;border:0">Travis CI</h1>
+  <hr />
+  <img width="250px" src="https://miro.medium.com/max/600/1*VXdK53mBfr27iT8LiHNAbg.png" />
+</div>
+
+---
 
 1. Create file config:
 

@@ -1,4 +1,10 @@
-# CircleCI
+<div align="center">
+  <h1 style="margin:0;border:0">CircleCI</h1>
+  <hr />
+  <img width="250px" src="https://elo7.dev/images/rodando-seus-testes-no-circle-ci-1.png" />
+</div>
+
+---
 
 1. Create file config:
 

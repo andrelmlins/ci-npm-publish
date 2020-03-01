@@ -10,7 +10,7 @@
 - [CircleCI](#circleci)
 - [Github Actions](#github-actions)
 - [Gitlab CI](#gitlab-ci)
-- [Travis](#travis)
+- [Travis CI](#travis-ci)
 
 ---
 
@@ -48,7 +48,7 @@
 
 ---
 
-### **Travis**
+### **Travis CI**
 
 [Details](TRAVIS.md) | [Site](https://travis-ci.com/) | [Example](examples/.travis.yml)
 
