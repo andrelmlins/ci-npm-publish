@@ -4,7 +4,7 @@ Examples of continuous integration for publishing npm packages.
 
 ## Contents
 
-- [Bitbucket CI](#bitbucker-ci)
+- [Bitbucket Pipelines](#bitbucket-pipelines)
 - [CircleCI](#circleci)
 - [Github Actions](#github-actions)
 - [Gitlab CI](#gitlab-ci)
@@ -12,7 +12,9 @@ Examples of continuous integration for publishing npm packages.
 
 ## Platforms
 
-### **Bitbucket CI**
+### **Bitbucket Pipelines**
+
+[Details](BITBUCKET.md) [Site](https://bitbucket.org/product/br/features/pipelines)
 
 1. Create file config:
 
@@ -42,6 +44,8 @@ pipelines:
 ```
 
 ### **CircleCI**
+
+[Details](CIRCLECI.md) [Site](https://circleci.com/)
 
 1. Create file config:
 
@@ -112,6 +116,8 @@ workflows:
 
 ### **Github Actions**
 
+[Details](GITHUB.md) [Site](https://github.com/features/actions)
+
 1. Create file config:
 
 ```sh
@@ -147,6 +153,8 @@ jobs:
 ```
 
 ### **Gitlab CI**
+
+[Details](GITLAB.md) [Site](https://docs.gitlab.com/ee/ci/)
 
 1. Create file config:
 
@@ -189,7 +197,7 @@ deploy:
 
 ### **Travis**
 
-[Travis CI](https://travis-ci.com/) is a hosted continuous integration service used to build and test software projects hosted at GitHub.
+[Details](TRAVIS.md) [Site](https://travis-ci.com/)
 
 1. Create file config:
 
