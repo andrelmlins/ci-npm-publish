@@ -1,0 +1,16 @@
+image: node:latest
+
+pipelines:
+  tags:
+    - step:
+      name: Build
+      script:
+        - yarn install
+        - yarn build
+    - step:
+      name: Publish
+      deployment: production
+      script:
+        - pipe: atlassian/npm-publish:0.2.0
+          variables:
+            NPM_TOKEN: $NPM_TOKEN
