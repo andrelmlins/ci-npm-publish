@@ -2,7 +2,12 @@
   <h1>Travis CI</h1>
 </div>
 
-<img width="250px" src="https://miro.medium.com/max/600/1*VXdK53mBfr27iT8LiHNAbg.png" />
+<div align="center">
+  <img width="250px" src="https://miro.medium.com/max/600/1*VXdK53mBfr27iT8LiHNAbg.png" />
+</div>
+
+<br />
+<br />
 
 1. Create file config:
 

@@ -2,7 +2,12 @@
   <h1>Github Actions</h1>
 </div>
 
-<img width="250px" src="https://miro.medium.com/max/300/0*EOBenMCWMDaPdeJL.png" />
+<div align="center">
+  <img width="250px" src="https://miro.medium.com/max/300/0*EOBenMCWMDaPdeJL.png" />
+</div>
+
+<br />
+<br />
 
 1. Create file config:
 

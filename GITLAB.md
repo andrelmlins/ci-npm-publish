@@ -2,7 +2,12 @@
   <h1>Gitlab CI</h1>
 </div>
 
-<img width="250px" src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-gray-rgb.png" />
+<div align="center">
+  <img width="250px" src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-gray-rgb.png" />
+</div>
+
+<br />
+<br />
 
 1. Create file config:
 

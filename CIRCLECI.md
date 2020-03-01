@@ -2,7 +2,12 @@
   <h1>CircleCI</h1>
 </div>
 
-<img width="250px" src="https://elo7.dev/images/rodando-seus-testes-no-circle-ci-1.png" />
+<div align="center">
+  <img width="250px" src="https://elo7.dev/images/rodando-seus-testes-no-circle-ci-1.png" />
+</div>
+
+<br />
+<br />
 
 1. Create file config:
 
