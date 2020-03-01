@@ -15,6 +15,33 @@ Examples of continuous integration for publishing npm packages.
 
 ### **Bitbucket CI**
 
+1. Create file config:
+
+```sh
+touch bitbucket-pipelines.yml
+```
+
+2. Copy the content
+
+```yaml
+image: node:latest
+
+pipelines:
+  tags:
+    - step:
+      name: Build
+      script:
+        - yarn install
+        - yarn build
+    - step:
+      name: Publish
+      deployment: production
+      script:
+        - pipe: atlassian/npm-publish:0.2.0
+          variables:
+            NPM_TOKEN: $NPM_TOKEN
+```
+
 ### **CircleCI**
 
 1. Create file config:
@@ -28,18 +55,39 @@ touch config.yml
 2. Copy the content
 
 ```yaml
-version: 2
+version: 2.1
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:10.16.3
 
 jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+
+      - run: yarn install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
   deploy:
-    working_directory: ~/repo
-    docker:
-      - image: circleci/node:8.9.1
+    <<: *defaults
     steps:
       - attach_workspace:
           at: ~/repo
-      - run: yarn install
-      - run: yarn build
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
@@ -49,12 +97,18 @@ jobs:
 
 workflows:
   version: 2
-  test-deploy:
+  build-deploy:
     jobs:
-      - deploy:
+      - build:
           filters:
             tags:
-              only: /.*/
+              only: /^.*/
+      - deploy:
+          requires:
+            - build
+          filters:
+            tags:
+              only: /^.*/
 ```
 
 ### **Gitlab CI**
@@ -71,15 +125,31 @@ touch .gitlab-ci.yml
 image: node:latest
 
 stages:
+  - build
   - deploy
+
+build:
+  stage: build
+  script:
+    - yarn install
+    - yarn build
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - dist/
+      - node_modules/
+  only:
+    - tags
 
 deploy:
   stage: deploy
   script:
-    - yarn install
-    - yarn build
     - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
     - npm publish
+  only:
+    - tags
+  dependencies:
+    - build
 ```
 
 ### **Github Actions**
