@@ -1,10 +1,8 @@
 <div align="center">
-  <h1 style="margin:0;border:0">Gitlab CI</h1>
-  <hr />
-  <img width="250px" src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-gray-rgb.png" />
+  <h1>Gitlab CI</h1>
 </div>
 
----
+<img width="250px" src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-gray-rgb.png" />
 
 1. Create file config:
 
