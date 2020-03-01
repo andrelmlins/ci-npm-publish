@@ -1,10 +1,7 @@
 <div align="center">
-    <img style="text-align:center" src="https://raw.githubusercontent.com/andrelmlins/create-react-dependency/master/packages/ci-npm-publish/master/logo.png" />
-
+    <img src="https://raw.githubusercontent.com/andrelmlins/ci-npm-publish/master/logo.png" />
     <h1>Continuous Integrations for NPM Publish</h1>
-
-    Examples of continuous integration for publishing npm packages.
-
+    <h4>Examples of continuous integration for publishing npm packages.</h4>
 </div>
 
 ## Contents
