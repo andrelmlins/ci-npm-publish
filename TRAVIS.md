@@ -1,14 +1,12 @@
 # Travis
 
-[Travis CI](https://travis-ci.com/) is a hosted continuous integration service used to build and test software projects hosted at GitHub.
-
 1. Create file config:
 
 ```sh
 touch .travis.yml
 ```
 
-2. Copy the content
+2. Copy the content and paste in `.travis.yml`
 
 ```yaml
 language: node_js
@@ -34,5 +32,3 @@ jobs:
         on:
           tags: true
 ```
-
-3. Paste content into .travis.yml

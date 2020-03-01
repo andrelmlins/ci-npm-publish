@@ -10,7 +10,7 @@ cd workflows
 touch release.yml
 ```
 
-2. Copy the content
+2. Copy the content and paste in `release.yml`
 
 ```yaml
 name: Publish

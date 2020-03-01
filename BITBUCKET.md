@@ -1,4 +1,4 @@
-# Bitbucket CI
+# Bitbucket Pipelines
 
 1. Create file config:
 
@@ -6,7 +6,7 @@
 touch bitbucket-pipelines.yml
 ```
 
-2. Copy the content
+2. Copy the content and paste in `bitbucket-pipelines.yml`
 
 ```yaml
 image: node:latest

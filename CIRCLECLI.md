@@ -8,7 +8,7 @@ cd .circleci
 touch config.yml
 ```
 
-2. Copy the content
+2. Copy the content and paste in `config.yml`
 
 ```yaml
 version: 2.1

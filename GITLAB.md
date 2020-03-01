@@ -6,7 +6,7 @@
 touch .gitlab-ci.yml
 ```
 
-2. Copy the content
+2. Copy the content and paste in `.gitlab.yml`
 
 ```yaml
 image: node:latest
