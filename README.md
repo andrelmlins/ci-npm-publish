@@ -14,13 +14,11 @@ Examples of continuous integration for publishing npm packages.
 
 ---
 
----
-
 ## Platforms
 
 ### **Bitbucket Pipelines**
 
-[Details](BITBUCKET.md) | [Site](https://bitbucket.org/product/br/features/pipelines) | [Example](examples/) | [Example](bitbucket-pipelines.yml)
+[Details](BITBUCKET.md) | [Site](https://bitbucket.org/product/br/features/pipelines) | [Example](examples/bitbucket-pipelines.yml)
 
 <img width="140px" src="https://wac-cdn.atlassian.com/dam/jcr:e75ffb0e-b3ee-40ca-8659-ecb93675a379/Bitbucket@2x-blue.png" />
 
@@ -28,7 +26,7 @@ Examples of continuous integration for publishing npm packages.
 
 ### **CircleCI**
 
-[Details](CIRCLECI.md) | [Site](https://circleci.com/) | [Example](.circleci)
+[Details](CIRCLECI.md) | [Site](https://circleci.com/) | [Example](examples/.circleci)
 
 <img width="140px" src="https://elo7.dev/images/rodando-seus-testes-no-circle-ci-1.png" />
 
@@ -36,7 +34,7 @@ Examples of continuous integration for publishing npm packages.
 
 ### **Github Actions**
 
-[Details](GITHUB.md) | [Site](https://github.com/features/actions) | [Example](.github)
+[Details](GITHUB.md) | [Site](https://github.com/features/actions) | [Example](examples/.github)
 
 <img width="140px" src="https://miro.medium.com/max/300/0*EOBenMCWMDaPdeJL.png" />
 
@@ -44,7 +42,7 @@ Examples of continuous integration for publishing npm packages.
 
 ### **Gitlab CI**
 
-[Details](GITLAB.md) | [Site](https://docs.gitlab.com/ee/ci/) | [Example](.gitlab.yml)
+[Details](GITLAB.md) | [Site](https://docs.gitlab.com/ee/ci/) | [Example](examples/.gitlab.yml)
 
 <img width="140px" src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-gray-rgb.png" />
 
@@ -52,11 +50,9 @@ Examples of continuous integration for publishing npm packages.
 
 ### **Travis**
 
-[Details](TRAVIS.md) | [Site](https://travis-ci.com/) | [Example](.travis.yml)
+[Details](TRAVIS.md) | [Site](https://travis-ci.com/) | [Example](examples/.travis.yml)
 
 <img width="140px" src="https://miro.medium.com/max/600/1*VXdK53mBfr27iT8LiHNAbg.png" />
-
----
 
 ---
 
