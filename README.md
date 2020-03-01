@@ -6,9 +6,8 @@ Examples of continuous integration for publishing npm packages.
 
 - [Bitbucket CI](#bitbucker-ci)
 - [CircleCI](#circleci)
-- [Gitlab CI](#gitlab-ci)
 - [Github Actions](#github-actions)
-- [Jenkins](#jenkins)
+- [Gitlab CI](#gitlab-ci)
 - [Travis](#travis)
 
 ## Platforms
@@ -111,6 +110,42 @@ workflows:
               only: /^.*/
 ```
 
+### **Github Actions**
+
+1. Create file config:
+
+```sh
+mkdir .github
+cd .github
+mkdir workflows
+cd workflows
+touch release.yml
+```
+
+2. Copy the content
+
+```yaml
+name: Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: yarn install
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+```
+
 ### **Gitlab CI**
 
 1. Create file config:
@@ -151,44 +186,6 @@ deploy:
   dependencies:
     - build
 ```
-
-### **Github Actions**
-
-1. Create file config:
-
-```sh
-mkdir .github
-cd .github
-mkdir workflows
-cd workflows
-touch release.yml
-```
-
-2. Copy the content
-
-```yaml
-name: Publish
-
-on:
-  release:
-    types: [published]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: https://registry.npmjs.org/
-      - run: yarn install
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-```
-
-### **Jenkins**
 
 ### **Travis**
 
