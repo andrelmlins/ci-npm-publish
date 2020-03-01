@@ -39,9 +39,10 @@ jobs:
       - attach_workspace:
           at: ~/repo
       - run: yarn install
+      - run: yarn build
       - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
       - run:
           name: Publish package
           command: npm publish
@@ -57,6 +58,29 @@ workflows:
 ```
 
 ### **Gitlab CI**
+
+1. Create file config:
+
+```sh
+touch .gitlab-ci.yml
+```
+
+2. Copy the content
+
+```yaml
+image: node:latest
+
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+    - yarn install
+    - yarn build
+    - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
+    - npm publish
+```
 
 ### **Github Actions**
 
@@ -89,11 +113,11 @@ jobs:
     - stage: npm release
       if: tag IS present
       node_js: "10"
-      script: yarn build # Insert in react|vue|svelte|angular|stencil packages
+      script: yarn build
       deploy:
         provider: npm
         email: $EMAIL_ADDRESS
-        api_key: $AUTH_TOKEN
+        api_key: $NPM_TOKEN
         skip_cleanup: true
         on:
           tags: true
