@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" width="auto" height="180px" src="https://raw.githubusercontent.com/andrelmlins/ci-npm-publish/master/logo.png" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/andrelmlins/ci-npm-publish/master/logo.png" />
   <h1>Continuous Integrations for NPM Publish</h1>
   <h4>Examples of continuous integration for publishing npm packages.</h4>
 </div>
