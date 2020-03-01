@@ -17,6 +17,45 @@ Examples of continuous integration for publishing npm packages.
 
 ### **CircleCI**
 
+1. Create file config:
+
+```sh
+mkdir .circleci
+cd .circleci
+touch config.yml
+```
+
+2. Copy the content
+
+```yaml
+version: 2
+
+jobs:
+  deploy:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:8.9.1
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run: yarn install
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
+      - run:
+          name: Publish package
+          command: npm publish
+
+workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - deploy:
+          filters:
+            tags:
+              only: /.*/
+```
+
 ### **Gitlab CI**
 
 ### **Github Actions**
@@ -27,10 +66,10 @@ Examples of continuous integration for publishing npm packages.
 
 [Travis CI](https://travis-ci.com/) is a hosted continuous integration service used to build and test software projects hosted at GitHub.
 
-1. Create `.travis.yml`file:
+1. Create file config:
 
 ```sh
-nano .travis.yml
+touch .travis.yml
 ```
 
 2. Copy the content
