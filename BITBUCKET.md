@@ -4,6 +4,8 @@
 
 <div align="center">
   <img alt="Bitbucket logo" width="250px" src="https://wac-cdn.atlassian.com/dam/jcr:e75ffb0e-b3ee-40ca-8659-ecb93675a379/Bitbucket@2x-blue.png" />
+  <br />
+  <br />
   
   [Site](https://bitbucket.org/product/br/features/pipelines) | [Example](examples/bitbucket-pipelines.yml)
 </div>

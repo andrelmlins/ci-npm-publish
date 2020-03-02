@@ -4,6 +4,8 @@
 
 <div align="center">
   <img alt="Travis CI logo" width="250px" src="https://miro.medium.com/max/600/1*VXdK53mBfr27iT8LiHNAbg.png" />
+  <br />
+  <br />
   
   [Site](https://travis-ci.com/) | [Example](examples/.travis.yml)
 </div>

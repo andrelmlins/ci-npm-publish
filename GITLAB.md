@@ -4,6 +4,8 @@
 
 <div align="center">
   <img alt="Gitlab CI logo" width="250px" src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-gray-rgb.png" />
+  <br />
+  <br />
   
   [Site](https://docs.gitlab.com/ee/ci/) | [Example](examples/.gitlab.yml)
 </div>

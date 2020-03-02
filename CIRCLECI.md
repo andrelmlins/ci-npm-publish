@@ -4,6 +4,8 @@
 
 <div align="center">
   <img alt="CircleCI logo" width="250px" src="https://elo7.dev/images/rodando-seus-testes-no-circle-ci-1.png" />
+  <br />
+  <br />
   
   [Site](https://circleci.com/) | [Example](examples/.circleci)
 </div>

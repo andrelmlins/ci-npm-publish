@@ -4,6 +4,8 @@
 
 <div align="center">
   <img alt="Github Actions logo" width="250px" src="https://miro.medium.com/max/300/0*EOBenMCWMDaPdeJL.png" />
+  <br />
+  <br />
   
   [Site](https://github.com/features/actions) | [Example](examples/.github)
 </div>
