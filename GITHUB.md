@@ -3,13 +3,15 @@
 </div>
 
 <div align="center">
-  <img width="250px" src="https://miro.medium.com/max/300/0*EOBenMCWMDaPdeJL.png" />
+  <img alt="Github Actions logo" width="250px" src="https://miro.medium.com/max/300/0*EOBenMCWMDaPdeJL.png" />
+  
+  [Site](https://github.com/features/actions) | [Example](examples/.github)
 </div>
 
 <br />
 <br />
 
-1. Create file config:
+## Create file config:
 
 ```sh
 mkdir .github
@@ -19,7 +21,7 @@ cd workflows
 touch release.yml
 ```
 
-2. Copy the content and paste in `release.yml`
+## Copy the content and paste in `release.yml`
 
 ```yaml
 name: Publish

@@ -3,19 +3,21 @@
 </div>
 
 <div align="center">
-  <img width="250px" src="https://miro.medium.com/max/600/1*VXdK53mBfr27iT8LiHNAbg.png" />
+  <img alt="Travis CI logo" width="250px" src="https://miro.medium.com/max/600/1*VXdK53mBfr27iT8LiHNAbg.png" />
+  
+  [Site](https://travis-ci.com/) | [Example](examples/.travis.yml)
 </div>
 
 <br />
 <br />
 
-1. Create file config:
+## Create file config:
 
 ```sh
 touch .travis.yml
 ```
 
-2. Copy the content and paste in `.travis.yml`
+## Copy the content and paste in `.travis.yml`
 
 ```yaml
 language: node_js

@@ -3,19 +3,21 @@
 </div>
 
 <div align="center">
-  <img width="250px" src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-gray-rgb.png" />
+  <img alt="Gitlab CI logo" width="250px" src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-gray-rgb.png" />
+  
+  [Site](https://docs.gitlab.com/ee/ci/) | [Example](examples/.gitlab.yml)
 </div>
 
 <br />
 <br />
 
-1. Create file config:
+## Create file config:
 
 ```sh
 touch .gitlab-ci.yml
 ```
 
-2. Copy the content and paste in `.gitlab.yml`
+## Copy the content and paste in `.gitlab.yml`
 
 ```yaml
 image: node:latest

@@ -3,13 +3,15 @@
 </div>
 
 <div align="center">
-  <img width="250px" src="https://elo7.dev/images/rodando-seus-testes-no-circle-ci-1.png" />
+  <img alt="CircleCI logo" width="250px" src="https://elo7.dev/images/rodando-seus-testes-no-circle-ci-1.png" />
+  
+  [Site](https://circleci.com/) | [Example](examples/.circleci)
 </div>
 
 <br />
 <br />
 
-1. Create file config:
+## Create file config:
 
 ```sh
 mkdir .circleci
@@ -17,7 +19,7 @@ cd .circleci
 touch config.yml
 ```
 
-2. Copy the content and paste in `config.yml`
+## Copy the content and paste in `config.yml`
 
 ```yaml
 version: 2.1

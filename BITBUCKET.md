@@ -3,19 +3,21 @@
 </div>
 
 <div align="center">
-  <img width="250px" src="https://wac-cdn.atlassian.com/dam/jcr:e75ffb0e-b3ee-40ca-8659-ecb93675a379/Bitbucket@2x-blue.png" />
+  <img alt="Bitbucket logo" width="250px" src="https://wac-cdn.atlassian.com/dam/jcr:e75ffb0e-b3ee-40ca-8659-ecb93675a379/Bitbucket@2x-blue.png" />
+  
+  [Site](https://bitbucket.org/product/br/features/pipelines) | [Example](examples/bitbucket-pipelines.yml)
 </div>
 
 <br />
 <br />
 
-1. Create file config:
+## Create file config:
 
 ```sh
 touch bitbucket-pipelines.yml
 ```
 
-2. Copy the content and paste in `bitbucket-pipelines.yml`
+## Copy the content and paste in `bitbucket-pipelines.yml`
 
 ```yaml
 image: node:latest
