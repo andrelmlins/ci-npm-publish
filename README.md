@@ -11,6 +11,7 @@
 - [Github Actions](#github-actions)
 - [Gitlab CI](#gitlab-ci)
 - [Travis CI](#travis-ci)
+- [Wercker](#wercker)
 
 ---
 
@@ -55,6 +56,12 @@
 <img alt="Travis CI logo" width="140px" src="https://miro.medium.com/max/600/1*VXdK53mBfr27iT8LiHNAbg.png" />
 
 ---
+
+### **Wercker**
+
+[Details](WERCKER.md) | [Site](https://app.wercker.com/) | [Example](examples/wercker.yml)
+
+<img alt="Wercker logo" width="140px" src="https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1481640407/xcmsrvor9cvaqqfh0udh.png" />
 
 ## License
 
