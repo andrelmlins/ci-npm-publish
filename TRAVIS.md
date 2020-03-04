@@ -44,3 +44,7 @@ jobs:
         on:
           tags: true
 ```
+
+## Example Projects
+
+If you use this CI format, enter your project here.

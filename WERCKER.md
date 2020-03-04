@@ -42,3 +42,7 @@ build:
         echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
         npm publish
 ```
+
+## Example Projects
+
+If you use this CI format, enter your project here.

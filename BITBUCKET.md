@@ -39,3 +39,7 @@ pipelines:
           variables:
             NPM_TOKEN: $NPM_TOKEN
 ```
+
+## Example Projects
+
+If you use this CI format, enter your project here.

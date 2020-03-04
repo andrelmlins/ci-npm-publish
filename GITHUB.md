@@ -46,3 +46,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 ```
+
+## Example Projects
+
+If you use this CI format, enter your project here.
