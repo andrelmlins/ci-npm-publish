@@ -63,6 +63,13 @@
 
 <img alt="Wercker logo" width="140px" src="https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1481640407/xcmsrvor9cvaqqfh0udh.png" />
 
+## Contribution guidelines
+
+If you want to contribute to **Continuous Integrations for NPM Publish**, be sure to review the
+[contribution guidelines](CONTRIBUTING.md). This project adheres to
+[code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to
+uphold this code.
+
 ## License
 
 Continuous Integrations for NPM Publish is open source software [licensed as MIT](https://github.com/andrelmlins/ci-npm-publish/blob/master/LICENSE).
